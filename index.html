@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <table>
+      <tr>
+        <td><input type="button" value="7" onclick="appendValue('7')"></td>
+        <td><input type="button" value="8" onclick="appendValue('8')"></td>
+        <td><input type="button" value="9" onclick="appendValue('9')"></td>
+        <td><input type="button" value="/" onclick="appendValue('/')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="appendValue('4')"></td>
+        <td><input type="button" value="5" onclick="appendValue('5')"></td>
+        <td><input type="button" value="6" onclick="appendValue('6')"></td>
+        <td><input type="button" value="*" onclick="appendValue('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="appendValue('1')"></td>
+        <td><input type="button" value="2" onclick="appendValue('2')"></td>
+        <td><input type="button" value="3" onclick="appendValue('3')"></td>
+        <td><input type="button" value="-" onclick="appendValue('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="appendValue('0')"></td>
+        <td><input type="button" value="." onclick="appendValue('.')"></td>
+        <td><input type="button" value="C" onclick="clearResult()"></td>
+        <td><input type="button" value="+" onclick="appendValue('+')"></td>
+      </tr>
+    </table>
+    <input type="button" value="=" onclick="calculateResult()">
+  </div>
+
+</body>
+</html>
